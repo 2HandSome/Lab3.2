@@ -1,0 +1,104 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <title>WebHosting</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-lg-8">
+                <nav class="navbar navbar-inverse navbar-fixed-top"><!-- navbar-inverse инверсия цвета navbar-fixed-top фиксация меню в верху-->
+                    <div class="container-fluid"><!-- container-fluid растягивает блок по всей ширине экрана-->
+                        <div class="navbar-header">
+                            <button type="button" id="navbar-toggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="index.html">WebHosting</a>
+                        </div>
+                        <div class="collapse navbar-collapse menu" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#" id="nav-a">Contacts</a></li>
+                                <li><a href="#" id="nav-a">About Us</a></li>
+                                <li><a onclick="openModal()" id="nav-a">Login</a></lidata-target>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div id="id01" class="modal">
+          
+          <form class="modal-content animate" action="#" method="post">
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+                
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+        <section >
+            <div class="carousel-container">
+                <i class = "fas  fa-arrow-left" id="prevBtn"></i>
+                <i class = "fas  fa-arrow-right" id="nextBtn"></i>
+             
+                <div class="carousel-slide">
+                    <img src="img/img3.jpg" id = "lastImg">
+                    <img src="img/img1.jpg">
+                    <img src="img/img2.jpg"> 
+                    <img src="img/img3.jpg">
+                    <img src="img/img1.jpg" id = "firstImg">
+                </div>
+            </div>
+        </section>
+           <div class="digital-clock">00:00:00</div>
+        <div class="columns">
+            <ul class="price">
+                <li class="header">Host</li>
+                <li class="grey">Free</li>
+                <li>Free web host</li>
+                <li>Some info</li>
+                <li class="grey"><a class="btn btn-primary btn-lg" href="#" role="button">Buy Now</a></li>
+            </ul>
+        </div>
+        <div class="columns">
+            <ul class="price">
+                <li class="header">Host + WebSite</li>
+                <li class="grey">€ 9.99</li>
+                <li>One mounth WebSite</li>
+                <li>Info</li>
+                <li class="grey"><a class="btn btn-primary btn-lg" href="#" role="button">Buy Now</a></li>
+            </ul>
+        </div>
+        <div class="columns">
+            <ul class="price">
+                <li class="header">Host + WebSite + Dominio</li>
+                <li class="grey">€ 9.99 / year</li>
+                <li>One year WebSite</li>
+                <li>Info</li>
+                <li class="grey"><a class="btn btn-primary btn-lg" href="#" role="button">Buy Now</a></li>
+            </ul>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>
